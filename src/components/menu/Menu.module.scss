@@ -1,0 +1,61 @@
+.wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: var(--text-color);
+
+    .label {
+        text-transform: uppercase;
+        opacity: 0;
+        position: absolute;
+        padding: 13px 20px 13px 20px;
+        border-radius: 50px;
+        background-color: var(--primary-color);
+        transition: all 0.2s ease-in;
+        cursor: default;
+    }
+
+    .icon.active {
+        color: #fff;
+        background-color: var(--primary-color);
+    }
+
+    .icon {
+        z-index: 10;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        border-radius: 100%;
+        height: 50px;
+        width: 50px;
+        background-color: var(--menu-bg-color);
+        transition: all 0.2s ease-in;
+
+        &:hover {
+            color: #fff;
+            background-color: var(--primary-color);
+        }
+
+        &:hover ~ .label{
+            color: #fff;
+            opacity: 1;
+            padding-right: 50px;
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .wrapper {
+        color: #fff;
+
+        .icon {
+            background-color: #444444;
+        }
+
+        .label {
+            display: none;
+        }
+    }
+}

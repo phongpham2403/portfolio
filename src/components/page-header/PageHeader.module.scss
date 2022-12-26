@@ -1,0 +1,45 @@
+.wrapper {
+    position: relative;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 8rem 0;
+    width: 100%;
+
+    h1 {
+        font-size: 5.6rem;
+        color: var(--text-color);
+        font-weight: 900;
+
+        span {
+            font-size: 5.6rem;
+            color: var(--primary-color);
+        }
+    }
+
+    span.title {
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-weight: 800;
+        font-size: 11rem;
+        color: var(--title-color);
+        letter-spacing: 10px;
+    }
+    
+}
+
+@media (max-width: 739px) {
+    .wrapper {
+        h1 {
+            font-size: 3.5rem;
+
+            span {
+                font-size: 3.5rem;
+            }
+        }
+
+        span.title {
+            font-size: 5.6rem;
+        }
+    }
+}

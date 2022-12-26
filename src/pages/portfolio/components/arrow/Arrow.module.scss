@@ -1,0 +1,23 @@
+.next, .prev {
+    position: absolute;
+
+    .icon {
+        font-size: 4.4rem;
+        color: #252525;
+        cursor: pointer;
+        opacity: 0.8;
+    }
+}
+
+.prev {
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 888;
+}
+
+.next {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}

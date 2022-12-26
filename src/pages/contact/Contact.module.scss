@@ -1,0 +1,150 @@
+@keyframes slide {
+    to {
+        top: 100vh;
+    }
+}
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--menu-bg-color);
+    animation: slide cubic-bezier(1,-.01,.64,1.02) 0.5s forwards;
+}
+
+.wrapper {
+    padding: 0 100px;
+    height: 100vh;
+    overflow-y: auto;
+
+    .content {
+        display: flex;
+
+        .details {
+            width: 33.33%;
+            color: var(--text-color);
+
+            h1 {
+                margin-bottom: 16px;
+                font-size: 2.6rem;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 1.5rem;
+                margin-bottom: 24px;
+                max-width: calc(100% - 40px);
+            }
+
+            .item {
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+
+                .icon {
+                    font-size: 2.6rem;
+                    color: var(--primary-color);
+                    margin-right: 10px;
+                    min-width: 40px;
+                    text-align: center;
+                }
+
+                .des {
+                    display: flex;
+                    flex-direction: column;
+
+                    span {
+                        font-size: 1.5rem;
+
+                        &:first-child {
+                            font-weight: 400;
+                            text-transform: uppercase;
+                        }
+
+                        &:last-child {
+                            font-weight: 500;
+                        }
+                    }
+                }
+            }
+
+            .social {
+                display: flex;
+                margin-bottom: 20px;
+
+                .item {
+                    color: var(--text-color);
+                    font-size: 3rem;
+                    margin-right: 10px;
+                    margin-left: 8px;
+                }
+            }
+        }
+
+        .form {
+            width: 66.67%;
+
+            .info {
+                display: flex;
+                justify-content: space-between;
+
+                .name, .email {
+                    width: calc(50% - 15px);
+                }
+            }
+
+            .info, .subject, .message {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .wrapper {
+        padding: 0 40px 80px;
+        
+        .content {
+            flex-direction: column;
+
+            .details {
+                width: 100%;
+
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .form {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 739px) {
+    .wrapper {
+        padding: 0 20px 60px;
+
+        .content {
+            .form {
+                .info {
+                    flex-direction: column;
+
+                    .name {
+                        width: 100%;
+                        margin-bottom: 30px;
+                    }
+
+                    .email {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    } 
+}

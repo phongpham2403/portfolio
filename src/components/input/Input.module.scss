@@ -1,0 +1,39 @@
+.wrapper {
+    input, textarea {
+        background-color: var(--title-color);
+        border-radius: 30px;
+        color: var(--text-color);
+        font-size: 1.5rem;
+        padding: 1.5rem 4rem;
+        width: 100%;
+        font-family: inherit;
+
+        &:focus {
+            outline: 1px solid var(--primary-color);
+        }
+    } 
+
+    textarea {
+        border-radius: 20px;
+        border: none;
+        padding: 1.5rem 4rem 8rem 4rem;
+    }
+}
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .wrapper {
+        input, textarea {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media (max-width: 739px) {
+    .wrapper {
+        input, textarea {
+            padding: 1.2rem 2rem;
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+    } 
+}
