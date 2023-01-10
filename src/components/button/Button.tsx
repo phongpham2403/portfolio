@@ -1,52 +1,51 @@
-import React from 'react'
-import classNames from 'classnames/bind'
-import styles from './Button.module.scss'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { IconDefinition } from '@fortawesome/free-brands-svg-icons'
-import { IconProp } from '@fortawesome/fontawesome-svg-core'
+import React from "react";
+import classNames from "classnames/bind";
+import styles from "./Button.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconDefinition } from "@fortawesome/free-brands-svg-icons";
+import { IconProp } from "@fortawesome/fontawesome-svg-core";
 
 interface ButtonProps {
-    icon?: IconDefinition | IconProp
-    rotate?: boolean
-    label: string
-    circle?: boolean
-    rounded?: boolean
-    isMenu?: boolean
-    defaultBtn?: boolean
-    className?: any
-    onClick?: () => void
+  icon?: IconDefinition | IconProp;
+  rotate?: boolean;
+  label: string;
+  circle?: boolean;
+  rounded?: boolean;
+  isMenu?: boolean;
+  defaultBtn?: boolean;
+  className?: any;
+  onClick?: () => void;
 }
 
 const Button = ({
-    label,
-    icon,
-    rotate,
-    rounded,
+  label,
+  icon,
+  rotate,
+  rounded,
+  isMenu,
+  defaultBtn,
+  className,
+  onClick,
+}: ButtonProps) => {
+  const cx = classNames.bind(styles);
+  const classes = cx("wrapper", {
+    [className]: className,
     isMenu,
     defaultBtn,
-    className,
-    onClick,
-}: ButtonProps) => {
-    const cx = classNames.bind(styles)
-    const classes = cx('wrapper', {
-        [className]: className,
-        isMenu,
-        defaultBtn,
-        rotate,
-        rounded,
-    })
+    rotate,
+    rounded,
+  });
 
-    return (
-        <span onClick={onClick} className={classes}>
-            <span className={cx('icon')}>
-                <FontAwesomeIcon
-                    className={cx('arrow', { rotate })}
-                    icon={icon}
-                />
-            </span>
-            <span className={cx('label')}>{label}</span>
-        </span>
-    )
-}
+  const propsIcon = icon as IconProp;
 
-export default Button
+  return (
+    <span onClick={onClick} className={classes}>
+      <span className={cx("icon")}>
+        <FontAwesomeIcon className={cx("arrow", { rotate })} icon={propsIcon} />
+      </span>
+      <span className={cx("label")}>{label}</span>
+    </span>
+  );
+};
+
+export default Button;
