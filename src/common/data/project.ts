@@ -1,6 +1,77 @@
 const projectList = [
     {
         id: 1,
+        header: 'SHOP DEAL',
+        image: [
+            {
+                id: 1,
+                url: 'https://res.cloudinary.com/dpxdggkft/image/upload/v1749431877/1_whp7ex.png',
+            },
+            {
+                id: 2,
+                url: 'https://res.cloudinary.com/dpxdggkft/image/upload/v1749431878/2_b61t9h.png',
+            },
+            {
+                id: 3,
+                url: 'https://res.cloudinary.com/dpxdggkft/image/upload/v1749431878/3_rdnli1.png',
+            },
+            {
+                id: 4,
+                url: 'https://res.cloudinary.com/dpxdggkft/image/upload/v1749431878/4_ed9vny.png',
+            },
+            {
+                id: 5,
+                url: 'https://res.cloudinary.com/dpxdggkft/image/upload/v1749431878/6_o4ena2.png',
+            },
+            {
+                id: 6,
+                url: 'https://res.cloudinary.com/dpxdggkft/image/upload/v1749431878/5_o2sxe5.png',
+            }
+            
+        ],
+        description:
+            'eCommerce Website - Some popular online shopping site is:  DEAL Shop. Thanks to online shopping, people can save lots of time.',
+        created: ' 08/06/2025',
+        role: 'full',
+        frontend: 'NextJS, TailwindCSS',
+        backend: 'NextJS, Prisma',
+        demo: 'https://e-commerce-mu-five-94.vercel.app',
+    },
+    {
+        id: 2,
+        header: 'Social',
+        image: [
+            {
+                id: 1,
+                url: 'https://res.cloudinary.com/dpxdggkft/image/upload/v1749431633/1_ec6vnf.png',
+            },
+            {
+                id: 2,
+                url: 'https://res.cloudinary.com/dpxdggkft/image/upload/v1749431634/2_wydz3k.png',
+            },
+            {
+                id: 3,
+                url: 'https://res.cloudinary.com/dpxdggkft/image/upload/v1749431634/4_qyrxjs.png',
+            },
+            {
+                id: 4,
+                url: 'https://res.cloudinary.com/dpxdggkft/image/upload/v1749431634/5_rhsonn.png',
+            },
+            {
+                id: 5,
+                url: 'https://res.cloudinary.com/dpxdggkft/image/upload/v1749431633/3_yut76j.png',
+            },
+        ],
+        description:
+            'social Website - You can post your moods, pictures.',
+        created: ' 20/05/2025',
+        role: 'full',
+        frontend: 'NextJS, TailwindCSS',
+        backend: 'NodeJS, Prisma, Noen',
+        demo: 'https://socially-7qkk.vercel.app',
+    },
+    {
+        id: 3,
         header: 'PV SHOP',
         image: [
             {
@@ -26,14 +97,14 @@ const projectList = [
         ],
         description:
             'eCommerce Website - Some popular online shopping site is: PVShop. Thanks to online shopping, people can save lots of time.',
-        created: ' 05/04/2022',
+        created: ' 05/04/2025',
         role: 'full',
         frontend: 'ReactJS, Redux',
         backend: 'NodeJS, MongoDB',
         demo: 'https://pvshop.netlify.app',
     },
     {
-        id: 2,
+        id: 4,
         header: 'PORTFOLIO',
         image: [
             {
@@ -54,14 +125,14 @@ const projectList = [
             },
         ],
         description: 'Websites that introduce themselves to employers',
-        created: ' 10/10/2022',
+        created: ' 10/10/2025',
         role: 'full',
         frontend: 'ReactJS',
         backend: 'Unused',
         demo: 'https://hoangphongportfolio.netlify.app',
     },
     {
-        id: 3,
+        id: 5,
         header: 'UNITY GAME',
         image: [
             {
@@ -82,14 +153,14 @@ const projectList = [
             },
         ],
         description: 'Live Stream Platform with Responsive Web Design UI',
-        created: ' 02/06/2022',
+        created: ' 02/06/2025',
         role: 'full',
         frontend: 'ReactJS',
         backend: 'Unused',
         demo: 'https://unitygame-hp.netlify.app',
     },
     {
-        id: 4,
+        id: 6,
         header: 'MEMORIES',
         image: [
             {
@@ -110,14 +181,14 @@ const projectList = [
             },
         ],
         description: 'Website store your memories',
-        created: ' 23/08/2022',
+        created: ' 23/08/2025',
         role: 'full',
         frontend: 'ReactJS',
         backend: 'NodeJS',
         demo: 'https://memoriessite.netlify.app',
     },
     {
-        id: 5,
+        id: 7,
         header: 'DASHBOARD',
         image: [
             {
@@ -139,7 +210,7 @@ const projectList = [
         ],
         description:
             'Management, statistics of the number of customers and revenue',
-        created: ' 16/04/2022',
+        created: ' 16/04/2025',
         role: 'full',
         frontend: 'ReactJS',
         backend: 'NodeJS',
